@@ -135,7 +135,7 @@ console.log(tiny(-5));
 // getSeconds('10:25') should return 625
 var getSeconds = function (time) {
 	
-	return (parseInt(time.substr(0, 1)) * 60) + (parseInt(time.substr(3, 2)))
+	return (parseInt(time) * 60 ) + parseInt(time.substr(3, 2))
 
 }
 
